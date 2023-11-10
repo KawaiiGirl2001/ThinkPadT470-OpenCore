@@ -54,10 +54,10 @@
 **Preparing the OpenCore configuration:**
 + Before starting the installation, you need to personalize the configuration - add to config.plist the generated unique serial numbers to run Apple services and ApECID to provide Apple SecureBoot full security mode. 
 + Use corpnewt's GenSMBIOS utility to create the SMBIOS. You will need to create an SMBIOS for the MacBookPro15,2 model. After creating the SMBIOS, enter data in the fields of the PlatformInfo -> Generic section. 
-Serial = SystemSerialNumber
-Board Serial = MLB
-SmUUID = SystemUUID
-AppleROM = ROM
++ Serial = SystemSerialNumber
++ Board Serial = MLB
++ SmUUID = SystemUUID
++ AppleROM = ROM
 + To generate your own ApECID value, you'll need some form of cryptographically secure random number generator that will output a 64-bit integer. Below is an example of how to do this using Python3:
 ```
 python3 -c 'import secrets; print(secrets.randbits(64))'

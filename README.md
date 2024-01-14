@@ -36,10 +36,10 @@
 + Sleep and wake
 + SD Card slot
 + Type-C charging and video output
-  
++ TouchScreen
+
 **What's not working?**
 + Fingerprint reader (Will not work)
-+ TouchScreen(Kext for touchscreen is disabled because it breaks sleep on macOS Sonoma, May be fixed in the future)
   
 **My hardware conifguration:**
 + ThinkPad T470 20HE with TouchScreen and IR-camera
